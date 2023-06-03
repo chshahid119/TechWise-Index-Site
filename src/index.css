@@ -1,13 +1,135 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Nunito&display=swap');
+
+
+
+
+* {
+  font-family: 'Nunito', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.navbar{
+  background-color: #fff !important;
+}
+.nav_bg{
+  background-color: #fff !important;
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+.navbar a{
+  text-transform: capitalize;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar a:hover{
+  color: #3498db !important;
 }
+
+
+
+
+/* #======================================================================= */
+/* Home.jsx css file  */
+#header{
+  width:100%;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+#header h1{
+  margin:0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#header .brand-name{
+  color: #4498db;
+}
+
+#header h2{
+  color:#484848;
+  font-size: 24px;
+}
+
+
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 1px solid #3498db;
+  text-decoration: none;
+  color: #3498db;
+  font-size:large;
+}
+#header .btn-get-started:hover{
+  background-color: #3498db;
+  color: white;
+}
+
+.header-img{
+      text-align: right;
+}
+
+@keyframes animatePicture {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+ 
+}
+
+.picture {
+  animation: animatePicture 2s ease-in-out infinite alternate-reverse both;
+}
+
+
+
+@media (max-width:991px){
+  #header{
+    height:80vh;
+    text-align: center;
+  }
+  #header .header-img{
+    text-align: center;
+
+  }
+  #header .header-img img{
+    width:60%;
+  }
+}
+
+
+
+@media (max-width:768px){
+  #header{
+   margin-top: 20px;
+  }
+  #header h1{
+    font-size: 28px;
+  }
+  #header h5{
+    font-size:18px;
+    margin-bottom: 30px;
+  }
+  #header .header-img img{
+    width:700%;
+  }
+}
+
+
+
